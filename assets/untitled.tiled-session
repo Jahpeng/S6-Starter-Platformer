@@ -1,0 +1,63 @@
+{
+    "activeFile": "platformer-level-1.tmj",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "fileStates": {
+        "": {
+            "scaleInEditor": 1
+        },
+        "kenny_tilemap_packed.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "platformer-level-1.tmj": {
+            "scale": 1.2514197530864197,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 405.139841168056,
+                "y": 224.94450747299362
+            }
+        },
+        "platformer-level-1.tmj#kenny_tilemap_packed": {
+            "scaleInDock": 1
+        },
+        "platformer-level-1.tmx": {
+            "scale": 1.2514197530864197,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 405.139841168056,
+                "y": 224.94450747299362
+            }
+        },
+        "platformer-level-1.tmx#kenny_tilemap_packed": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        }
+    },
+    "last.exportedFilePath": "C:/CMPM 120/StarterPlatformer/assets",
+    "last.imagePath": "C:/CMPM 120/StarterPlatformer/assets",
+    "map.height": 25,
+    "map.lastUsedExportFilter": "JSON map files (*.tmj *.json)",
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 18,
+    "map.tileWidth": 18,
+    "map.width": 45,
+    "openFiles": [
+        "kenny_tilemap_packed.tsx",
+        "platformer-level-1.tmx",
+        "platformer-level-1.tmj"
+    ],
+    "project": "untitled.tiled-project",
+    "property.type": "bool",
+    "recentFiles": [
+        "kenny_tilemap_packed.tsx",
+        "platformer-level-1.tmx",
+        "platformer-level-1.tmj"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 18,
+        "width": 18
+    }
+}

@@ -46,25 +46,43 @@ class Platformer extends Phaser.Scene {
             this.physics.world.debugGraphic.clear()
         }, this);
 
+        //Camera Extra Credit Attempt
+        this.cameras.main.startFollow(my.sprite.player, true, 0.1, 0.1);
+        this.cameras.main.setBounds(0,0,game.config.width *2, game.config.height *2);
+        this.cameras.main.setFollowOffset(0,0);
+
     }
 
     update() {
         if(cursors.left.isDown) {
             // TODO: have the player accelerate to the left
+            my.sprite.player.body.setAccelerationX(-this.ACCELERATION);
             
             my.sprite.player.resetFlip();
             my.sprite.player.anims.play('walk', true);
 
+            //CAMERA EXTRA CREDIT:
+            this.cameras.main.setFollowOffset(130,0);
+
         } else if(cursors.right.isDown) {
             // TODO: have the player accelerate to the right
+            my.sprite.player.body.setAccelerationX(this.ACCELERATION);
 
             my.sprite.player.setFlip(true, false);
             my.sprite.player.anims.play('walk', true);
+            
+            //CAMERA EXTRA CREDIT:
+            this.cameras.main.setFollowOffset(-130,0);
 
         } else {
             // TODO: set acceleration to 0 and have DRAG take over
+            my.sprite.player.body.setAccelerationX(0);
+            my.sprite.player.body.setDragX(this.DRAG);
 
             my.sprite.player.anims.play('idle');
+
+            //CAMERA EXTRA CREDIT:
+            this.cameras.main.setFollowOffset(0,0);
         }
 
         // player jump
@@ -74,6 +92,7 @@ class Platformer extends Phaser.Scene {
         }
         if(my.sprite.player.body.blocked.down && Phaser.Input.Keyboard.JustDown(cursors.up)) {
             // TODO: set a Y velocity to have the player "jump" upwards (negative Y direction)
+            my.sprite.player.body.setVelocityY(this.JUMP_VELOCITY);
 
         }
     }
